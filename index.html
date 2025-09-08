@@ -1,0 +1,83 @@
+<DOCTYPE! html>
+
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>The Poet</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 30px;
+        background-color: #f9f9f9;
+      }
+    
+      h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+    
+      input {
+        padding: 8px;
+        width: 450px;
+        font-size: 1em;
+      }
+    
+      button {
+        padding: 8px 12px;
+        margin-left: 5px;
+        font-size: 1em;
+        cursor: pointer;
+      }
+    
+      #output {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background: #fff;
+        max-height: 80vh;
+        /* extend through most of the page */
+        overflow-y: auto;
+        /* vertical scroll if content exceeds box */
+        white-space: pre-wrap;
+      }
+    
+      .poem {
+        border: 1px solid #ccc;
+        padding: 8px;
+        margin-bottom: 10px;
+        background-color: #fefefe;
+      }
+    
+      .poem-row {
+        display: flex;
+        margin: 2px 0;
+      }
+    
+      .poem-row .label {
+        font-weight: bold;
+        width: 100px;
+      }
+    
+      .poem-row .value {
+        flex: 1;
+      }
+    
+      .poem-lines {
+        margin: 2px 0 5px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Poetry Search Engine</h2>
+    <p>Uses PoetryDB API</p>
+    <input type="text" id="userInput" placeholder="Enter the name of a famous Poet or Poetry Title...">
+    <button onclick="showOutput()">Submit</button>
+  
+    <div id="output"></div>
+    
+    <script src="script.js"></script>
+
+  </body>
+
+  </html>
